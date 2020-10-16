@@ -9,6 +9,6 @@ Note: Simulation results to be added soon.
 </br>
 1. **State-space** : The state is simply the 84 x 84 RGB image captured by the on-board vehicle camera which is processed by the neural network. 
 2. **Action-space** : It is an array of tuples of the form (throttle, steering, brake). The output of the neural network is mapped to one of the tuples in this array using the minimum of the Euclidean norm calculated with respect to the obained value from the neural network.
-3. **Reward** : he reward is computed in real-time using the wheel odometry, collision, lane-invasion sensor values and is discounted over an episode with a preset discounted factor.
+3. **Reward** : The reward is computed in real-time using the wheel odometry, collision, lane-invasion sensor values and is discounted over an episode with a preset discounted factor.
 </br>
 Neural Network Architecture:- </br>
