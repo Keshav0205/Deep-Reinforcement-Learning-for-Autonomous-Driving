@@ -7,8 +7,10 @@ This repository contains my implementation of Deep Reinforcement Learning using 
 5. __State-space__ : The state is simply the 84 x 84 RGB image captured by the on-board vehicle camera which is processed by the neural network.
 6. __Action-space__ : It is an array of tuples of the form (throttle, steering, brake). The output of the neural network is mapped to one of the tuples in this array using the minimum of the Euclidean norm calculated with respect to the obained value from the neural network.
 7. __Reward__ : The reward is computed in real-time using the wheel odometry, collision, lane-invasion sensor values and is discounted over an episode with a preset discounted factor.
+8. __Neural Network Architecture__: 84 x 84 RGB image -> Convolution_1-> Convolution_2 -> Convolution_3 -> Flatten -> Fully Connected.
+9. The output of the __Flatten layer__ is divided into the next __Fully Connected Layer__ and an Advantage output.
+10. __Final Layer__: Q(s,a) = V(s) + A(s,a) - 1/|A| * sum(A(s,a'))
 </br>
 Note: Simulation results to be added soon.
 </br>
-1. hello
-## Neural Network Architecture:- </br>
+
