@@ -10,6 +10,7 @@ This repository contains my implementation of Deep Reinforcement Learning using 
 8. __Neural Network Architecture__: 84 x 84 RGB image -> Convolution_1-> Convolution_2 -> Convolution_3 -> Flatten -> Fully Connected.
 9. The output of the __Flatten layer__ is divided into the next __Fully Connected Layer__ and an Advantage output.
 10. __Final Layer__: Q(s,a) = V(s) + A(s,a) - 1/|A| * sum(A(s,a'))
+11. [Link to project description](https://drive.google.com/file/d/1eVmQC4MBqDEFZle5uc2Wb4PD-Jtt8TC_/view?usp=sharing)
 </br>
 Note: Simulation results to be added soon.
 </br>
